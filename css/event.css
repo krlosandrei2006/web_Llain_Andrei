@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Titulos";
+    src: url(../Fonts/HedvigLettersSans-Regular.ttf);
+}
+@font-face {
+    font-family: "Textos";
+    src: url(../Fonts/Helvetica\ LT\ Pro\ Roman.ttf);
+}
+body{
+    display: flex;
+}
+h1{
+    font-family: "Titulos";
+}
+p{
+    font-family: "Textos";
+}
+h2{
+font-family: "Titulos";
+}
+span{
+font-family: "Textos";
+}
+label{
+    font-family: "Titulos";
+}
+input{
+    font-family: "Textos";
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#pago-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    gap: 4rem;
+    padding: 3rem;
+    background-color: #3c5a45;
+    min-height: 100vh;
+    
+}
+#pag-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+#resumen{
+    background-color: beige;
+    padding: 2rem;
+    width: 28rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+#resumen h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#volver{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#resumen h2{
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.linea{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 1rem 0;
+}
+
+.fila{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin: .5rem 0;
+}
+
+.total{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+
+#pago{
+    background-color: beige;
+    padding: 2rem;
+    width: 28rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+#pago h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+label{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+input{
+    width: 100%;
+    padding: .7rem;
+    border-radius: .5rem;
+    border: 1px solid #333;
+    margin-top: .3rem;
+    font-size: 1rem;
+}
+
+#fila-doble{
+    display: flex;
+    gap: 1rem;
+}
+
+#btn-pagar{
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+    color: beige;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#btn-pagar:hover{
+    background-color: bisque;
+    color: black;
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+    
+    body {
+        flex-direction: column; 
+        min-height: 100vh;
+        background-color: #3c5a45;
+    }
+
+   
+    #pago-container {
+        width: 100%;
+        min-height: auto;
+        padding: 2rem 1rem 1rem 1rem; 
+        gap: 0;
+    }
+
+    #resumen {
+        width: 100%; 
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    #resumen h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    
+    #pag-container {
+        width: 100%;
+        margin-left: 0; 
+        padding: 1rem 1rem 2rem 1rem;
+    }
+
+    #pago {
+        width: 100%; 
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    #pago h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    
+    label {
+        font-size: 1.2rem;
+        margin-top: 0.8rem;
+    }
+
+    input {
+        width: 100%;
+        height: 2.5rem; 
+        font-size: 1rem;
+        padding: 0 0.8rem;
+    }
+
+    
+    #fila-doble {
+        flex-direction: column; 
+        gap: 1rem;
+    }
+
+    #fila-doble div {
+        width: 100%; 
+    }
+
+    
+    #pago button {
+        width: 100%;
+        height: 3.5rem; 
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+}
